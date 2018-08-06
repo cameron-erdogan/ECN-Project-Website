@@ -11,6 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/ecn.css" />
 </head>
 
 <body class="is-preload">
@@ -19,9 +20,12 @@
         <!-- Header -->
         <header id="header">
             <h1>
-                Family Portal and First Responder Portal</h1>
+                Family and First Responder Portal</h1>
             <nav id="nav">
                 <ul>
+                    <li>
+                        <a href="index.html" class="icon">Home</a>
+                    </li>
                     <li>
                         <a href="#" class="icon fa-angle-down">Sections</a>
                         <ul>
@@ -35,7 +39,7 @@
                                         <a href="research.html">Research</a>
                                     </li>
                                     <li>
-                                        <a href="pr-case-study.html">Case Study: Puerto Rico</a>
+                                        <a href="pr-case-study.html">Puerto Rico Case Study</a>
                                     </li>
                                     <li>
                                         <a href="design-generation.html">Design Generation</a>
@@ -43,7 +47,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Design Execution</a>
+                                <a href="design-execution.html">Design Execution</a>
                                 <ul>
                                     <li>
                                         <a href="high-level-service.html">High Level Service</a>
@@ -68,93 +72,285 @@
         <!-- Main -->
         <section id="main" class="container">
             <header>
-                <h2>Concept Validation</h2>
-                <p>We explored the disaster relief and recovery space to find a worthy problem to solve.</p>
+                <h2>Family and First Responder Portals</h2>
+                <p>First responders can prioritize survivor needs. Family can know their loved ones are safe.</p>
             </header>
 
-
-            <div class="row">
-                <div class="col-6 col-12-narrower">
-
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/irma-satellite.jpg" alt="" />
-                        </span>
-                        <h3>Problem Statement</h3>
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Overview: First Responder Portal</h2>
                         <p>
-                            Natural disasters are becoming more severe, and the failure chain that occurs after a disaster is often just as damaging.
-                            We researched the disaster management and recovery field, and persistent issues in disaster resilience.
+                            The first responder portal is a data visualization tool that allows aid workers, NGOs, and emergency personnel to prioritize
+                            disaster survivor needs. Data collected from mesh nodes within the Eaton Emergency Communication
+                            Network can be uploaded and viewed by any instance of this application.
                         </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
-
-                </div>
-
-                <div class="col-6 col-12-narrower">
-
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/rescue-worker-carrying-ladder.jpg" alt="" />
+                    </div>
+                    <div class="col-12">
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/firstresponder.gif">
                         </span>
-                        <h3>Research</h3>
-                        <p>We conducted a competitive analysis of existing disaster recovery technologies, and interviewed experts
-                            in disaster management.</p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
-
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6 col-12-narrower">
 
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/puerto-rico-flags.jpg" alt="" />
-                        </span>
-                        <h3>Puerto Rico Case Study</h3>
-                        <p>
-                            Puerto Rico was devastated by Hurricane Maria, and the entire island lost power. We interviewed locals and codesigned solutions
-                            based on the lived experience of a post-disaster community.
-                        </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
+            <section class="box  features">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>First Responder Portal Features</h2>
+                    </div>
 
                 </div>
-                <div class="col-6 col-12-narrower">
+                <div class="features-row">
+                    <section>
 
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/design.jpg" alt="" />
-                        </span>
-                        <h3>Design</h3>
-                        <p>We followed a design sprint process to ideate solutions around the problem of communication, validate
-                            the technical feasibility of those solutions, and codesigned a framework with Eaton to evaluate
-                            designs.
-                        </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
+                        <h3>Views</h3>
+                        <p>Map to visualize user-submitted aid requests an prioritize regions. List view to sort data, and export
+                            to other data visualization applications.</p>
+                        <p>
+                            According to interviews with members of FEMA, aid workers will often print maps of entire regsions for ground work, or export
+                            data to existing mapping tools</p>
                     </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-views.png">
+                        </span>
 
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+
+                        <h3>Region and Supply Filters</h3>
+                        <p>
+                            First responders can display requests by region, or display only certain types of requests to better coordinate aid management.
+                        </p>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-filters.png">
+                        </span>
+
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+
+                        <h3>Direct Messaging</h3>
+                        <p>Users can send messages to nodes in a specific region, alerting survivors to supply dropoff points,
+                            timelines, or additional hazards in the area.</p>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-dms.png">
+                        </span>
+
+                    </section>
+                </div>
+            </section>
+
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>First Responder Research</h2>
+                        <p>The design of the first responder portal reflects insights from interviews with members of FEMA,
+                            the Red Cross, and the World Bank about how data is prioritized and who is helped first. We later
+                            validated the design with our contacts.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+
+                        <blockquote>“[We have] people physically walking around collecting data. We will never have enough people.”</blockquote>
+                        <h4>Conor McDonough, FEMA</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="off-1 col-10">
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-research-1.png">
+                        </span>
+                    </div>
+                    <div class="off-1 col-10">
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-research-2.png">
+                        </span>
+                    </div>
+                    <div class="off-1 col-10">
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-research-3.png">
+                        </span>
+                    </div>
                 </div>
             </div>
 
+            <div class="box features">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>First Responder Design</h2>
+                        <p>This is a snapshot of early, lo-fi designs of the first responder portal.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Wireframes</h3>
+                    </div>
+                </div>
+                <div class="features-row">
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-1.png">
+                        </span>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-2.png">
+                        </span>
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-3.png">
+                        </span>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-4.png">
+                        </span>
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-5.png">
+                        </span>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-6.png">
+                        </span>
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-7.png">
+                        </span>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fr-wf-8.png">
+                        </span>
+                    </section>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Overview: Family Portal</h2>
+                        <p>
+                            The family portal allows loved ones to receive and reply to messages from disaster survivors. Messages collected in the Eaton
+                            Emergency Communication Network will appear as links to a secure site in the recipients’ email
+                            or text inbox.
+                        </p>
+                    </div>
+                    <div class="col-4 off-4 off-1-mobilep col-10-mobilep">
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/family.gif">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="box  features">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Family Portal Features</h2>
+                    </div>
+
+                </div>
+                <div class="features-row">
+                    <section>
+
+                        <h3>Email</h3>
+                        <p>Disaster survivors can send a message to a loved one by SMS or email. Recipients will see this as
+                            an email or text from an official source.</p>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fam-email.png">
+                        </span>
+
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+
+                        <h3>Reply to Messages</h3>
+                        <p>
+                            Loved ones can responde to any received mesages via the same secure portal. Responses will be uploaded to drones and distributed
+                            to the same mesh nodes that survivors can access.
+                        </p>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fam-reply.png">
+                        </span>
+
+                    </section>
+                </div>
+                <div class="features-row">
+                    <section>
+
+                        <h3>Direct Messaging</h3>
+                        <p>Friends and family can receive messages by either SMS or email, so they can choose to have all messages
+                            forwarded to the same portal regardless of source. </p>
+                        <p>
+                            Users can manually add all relevant emails and phone numbers to the same secure portal to receive all messages in the same
+                            place.
+                        </p>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fam-merge.png">
+                        </span>
+                    </section>
+                </div>
+            </section>
+
+            <div class="box features">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Family Portal Design</h2>
+                        <p>This is a snapshot of early, lo-fi designs of the family portal.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Wireframes</h3>
+                    </div>
+                </div>
+                <div class="features-row">
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fam-wf-1.png">
+                        </span>
+                    </section>
+                    <section>
+                        <span class="image fit">
+                            <img src="images/fam-first-responder/fam-wf-2.png">
+                        </span>
+                    </section>
+                </div>
+
+
+            </div>
         </section>
+
 
 
         <!-- footer -->
