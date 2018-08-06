@@ -11,6 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/ecn.css" />
 </head>
 
 <body class="is-preload">
@@ -22,6 +23,9 @@
                 Survivor Portal</h1>
             <nav id="nav">
                 <ul>
+                    <li>
+                        <a href="index.html" class="icon">Home</a>
+                    </li>
                     <li>
                         <a href="#" class="icon fa-angle-down">Sections</a>
                         <ul>
@@ -35,7 +39,7 @@
                                         <a href="research.html">Research</a>
                                     </li>
                                     <li>
-                                        <a href="pr-case-study.html">Case Study: Puerto Rico</a>
+                                        <a href="pr-case-study.html">Puerto Rico Case Study</a>
                                     </li>
                                     <li>
                                         <a href="design-generation.html">Design Generation</a>
@@ -43,7 +47,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Design Execution</a>
+                                <a href="design-execution.html">Design Execution</a>
                                 <ul>
                                     <li>
                                         <a href="high-level-service.html">High Level Service</a>
@@ -68,90 +72,253 @@
         <!-- Main -->
         <section id="main" class="container">
             <header>
-                <h2>Concept Validation</h2>
-                <p>We explored the disaster relief and recovery space to find a worthy problem to solve.</p>
+                <h2>Survivor Portal</h2>
+                <p>A platform to connect disaster survivors with first responders and their loved ones.</p>
             </header>
 
-
-            <div class="row">
-                <div class="col-6 col-12-narrower">
-
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/irma-satellite.jpg" alt="" />
-                        </span>
-                        <h3>Problem Statement</h3>
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Overview</h2>
                         <p>
-                            Natural disasters are becoming more severe, and the failure chain that occurs after a disaster is often just as damaging.
-                            We researched the disaster management and recovery field, and persistent issues in disaster resilience.
+                            The survivor portal is an aid request and messaging platform that is accessed on survivor mobile phones. Survivors connect
+                            to "Eaton Emergency Network", a wifi signal broadcast by mesh nodes. The node serves a locally
+                            hosted web application that the survivor can use to fill out a needs form and compose messages
+                            to loved ones. The messages are then delivered by drone a few days later.
                         </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
 
-                </div>
-
-                <div class="col-6 col-12-narrower">
-
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/rescue-worker-carrying-ladder.jpg" alt="" />
-                        </span>
-                        <h3>Research</h3>
-                        <p>We conducted a competitive analysis of existing disaster recovery technologies, and interviewed experts
-                            in disaster management.</p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
-
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-6 col-12-narrower">
-
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/puerto-rico-flags.jpg" alt="" />
-                        </span>
-                        <h3>Puerto Rico Case Study</h3>
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Survivor Portal Prototype</h2>
                         <p>
-                            Puerto Rico was devastated by Hurricane Maria, and the entire island lost power. We interviewed locals and codesigned solutions
-                            based on the lived experience of a post-disaster community.
+                            We designed a working prototype of the capitve portal. We used a Raspberry Pi to serve as a wifi hotspot and web server,
+                            and coded the web page using material design components.
                         </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
 
+                    </div>
                 </div>
-                <div class="col-6 col-12-narrower">
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Raspberry Pi as a Captive Portal</h3>
+                    </div>
+                    <div class="col-6">
 
-                    <section class="box special">
-                        <span class="image featured">
-                            <img src="images/main/design.jpg" alt="" />
+                        <p>
+                            The ever-versatile Raspberry Pi served our hardware prototyping needs. We made use of
+                            <a href="https://brennanhm.ca/knowledgebase/2016/10/raspberry-pi-access-point-and-captive-portal-without-internet/">this tutorial</a> to enable the captive portal behavior. Instead of this tutorial's basic webpage,
+                            we embdedded the entire survivor portal flow into the captive portal window.
+                        </p>
+
+                    </div>
+                    <div class="col-6">
+                        <span class="image fit">
+                            <img src="images/survivor-portal/raspberry-pi.jpg">
                         </span>
-                        <h3>Design</h3>
-                        <p>We followed a design sprint process to ideate solutions around the problem of communication, validate
-                            the technical feasibility of those solutions, and codesigned a framework with Eaton to evaluate
-                            designs.
-                        </p>
-                        <ul class="actions special">
-                            <li>
-                                <a href="#" class="button alt">Explore</a>
-                            </li>
-                        </ul>
-                    </section>
-
+                    </div>
                 </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Walkthrough</h3>
+                        <p>To get a better sense of the prototype's functionality, we've recorded a
+                            <a href="https://youtu.be/H3HFAu7nhYk">walkthrough video</a>. Note the captive portal screen that pops up at the beginning.</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Survivor Portal Features</h2>
+                        <p>Through continuous testing, we have designed several key features in the survivor portal.</p>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit">
+                            <img class="drop-shadow" src="images/survivor-portal/wifi.jpg ">
+                            <h3>Captive Portal</h3>
+                            <p>The app is automatically shown when connecting to the network. We chose this instead of an app,
+                                as that would require pre-disaster planning. This is a low-power, low-commitment solution.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/landing-page.jpg ">
+                            <h3>Landing Page</h3>
+                            <p>The landing page has logos of both Eaton and the local government to build trust with users.
+                                This also builds brand for Eaton. By clearly defining the action here, the page has a low
+                                cognitive load for users who may be in distress post-disaster.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/registration.jpg ">
+                            <h3>Registration</h3>
+                            <p>The purpose of the system is clearly stated on this page. Users enter a phone number as a unique
+                                identifier. There are no passwords, as they would add too much complexity to a stressful
+                                post-disaster situation.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/family name.jpg ">
+                            <h3>Family Name</h3>
+                            <p>This feature consolidates the number of potentially redundant responses by allowing users to
+                                register by surname, instead of individually. The page helps to inform users of the intended
+                                use of data.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/menu.jpg ">
+                            <h3>Choosing the Action</h3>
+                            <p>This page allows survivors to prioritize the action according to need. Survivors can either request
+                                aid or send messages to loved ones. We follow progressive disclosure of different concepts
+                                through this format. </p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/aid-form.jpg ">
+                            <h3>Aid Form</h3>
+                            <p>The aid form has five categories, divided by the mental model of average people. The household
+                                category is the only mandatory section. Questions are simple and situational, easily answerable
+                                by the average user.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/send-message.jpg ">
+                            <h3>Sending Messages</h3>
+                            <p>One message can be sent to up to five different people. This feature accepts and validates emails
+                                and phone numbers, and reminds users with a disclaimer not to include private information
+                                such as passwords or bank account information.</p>
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/submit-request.jpg ">
+                            <h3>Submit Requests and Messages</h3>
+                            <p>The final step in this user flow is to submit requests and messages. A confirmation screen appears
+                                that messages will be delivered soon, and survivors can log back in later to view responses.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Usability Testing and Design Refinement</h2>
+                        <p>In order to refine our prototype, we tested each iteration of our design with both UX experts and
+                            disaster survivors. Standard questions were asked at each phase of design, which were measured
+                            by number of responses and intensity of response.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Lo-Fi Paper and Balsamiq Prototype</h3>
+                        <p>We began testing our design with low-fidelity paper prototypes to ensure the length of the tasks,
+                            form content, and other details worked with our users. </p>
+                    </div>
+                    <div class="col-12">
+                        <span class="image fit">
+                            <img src="images/survivor-portal/usability-testing.png">
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Measuring Usability Tests</h3>
+                        <p>We kept track of how different users responded to the same questions, in order to gauge the importance
+                            of each usability issue.</p>
+                    </div>
+                    <div class="col-12">
+                        <span class="image fit">
+                            <img src="images/survivor-portal/measuring.png">
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Inducing Stress in Participants</h3>
+                        <p>In order to mimic the reaction of real-life users after a disaster, we induced mild stress in our
+                            usability testing participants.
+                        </p>
+                        <p>This included:</p>
+                        <ul>
+                            <li>Having participants watch YouTube videos of hurricanes and other disasters before testing</li>
+                            <li>Interrupting participants mid-task</li>
+                            <li>Making participants stand up and walk around mid-task</li>
+                            <li>Having participants memorize a set of random words and testing them later on these words mid-test</li>
+                            <li>Setting the stage by giving participants a persona to embody throughout the session</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <span class="image fit">
+                            <img src="images/survivor-portal/stress.gif">
+                            <h4>A usability tester, visibly stressed</h4>
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Expert Interviews</h3>
+                        <p>As we wanted to make sure our aid request form captured relevant information and was useful and usable,
+                            we showed our form design and questions to a psychology professor here at Carnegie Mellon University
+                            and to disaster management experts.
+                        </p>
+                        <p>We learned the following:</p>
+                        <ul>
+                            <li>Using simplel anguage (o.e. frequently-used words) is important</li>
+                            <li>Responses should be multiple choice</li>
+                            <li>Users should be able to have a high-level understanding of the form prior to starting it</li>
+                            <li>Form should not be too long or detailed</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Hi-Fi InVision Wireframes</h3>
+                        <p>As we continued to gather usability feedback, we moved to high-fidelity screens using Sketch and
+                            InVision.
+                        </p>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/Needs form - demographics.jpg ">
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/Needs form - Medical.jpg ">
+                        </span>
+                    </div>
+                    <div class="col-4 col-12-mobilep">
+                        <span class="image fit ">
+                            <img class="drop-shadow" src="images/survivor-portal/Checkpoint3.jpg ">
+                        </span>
+                    </div>
+                </div>
+
+
+
+
             </div>
 
         </section>
